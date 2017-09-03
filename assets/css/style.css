@@ -1,0 +1,62 @@
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  main {
+    flex: 1 0 auto;
+  }
+nav{background-color:#02B26A;}
+.hero-home{background-color:grey;}
+.page-footer {
+    color: #fff;
+    background-color: #02b26a;
+}
+.btn, .btn-large, .btn-floating, .btn-large, .btn-flat {
+    font-size: 10px;
+    outline: 0;
+}
+.section1{margin-top:px;}
+.left-bill{width:100%;}
+.right-bill{height:100%;}
+.right-bill .card-title{font-size:15px;}
+.card .card-action a:not(.btn):not(.btn-large):not(.btn-large):not(.btn-floating) {margin: 2px 0px;
+    background-color: #02b26a;
+    padding: 11px 11px;
+    border-radius: 2px;
+    color: #fff;}
+ .card .card-action {
+    padding: 16px 16px;
+}
+
+
+.total-bottom{
+	min-height: 50px;
+    border-top: 2px solid black;
+    background-color: #f1f1f1;
+    margin-top: 30px;
+    padding: 3px 0px;
+}
+.totb{border-top:2px solid black;}
+table.tot th, td{padding:5px 5px;}
+table.tot td{text-align:right;}
+.sel-tables .col{border:1px solid black;margin:5px 5px;padding:10px;text-align:center;cursor:pointer;}
+.paginate{position: absolute;
+    bottom: 0px;}
+
+    .modal-title{background-color: #f1f1f1;
+    padding: 12px;}
+#modal-tableorder{width:400px;}
+.table-design{padding: 25px 45px;
+    text-align: center;
+    }
+.table-design-inner img{
+    max-width:90%;
+    }
+.table-design, .free .allocated{cursor:pointer;}
+.table-design p {line-height: 0px;font-weight:500;}
+.btn{border-radius:25px;}
+@media screen and (max-width: 600px) {
+    .scroll-x{overflow-x: scroll;}
+}
