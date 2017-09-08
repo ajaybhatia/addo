@@ -60,3 +60,13 @@ table.tot td{text-align:right;}
 @media screen and (max-width: 600px) {
     .scroll-x{overflow-x: scroll;}
 }
+.sidebar{background-color:#02b26a;padding:25px 5px!important;}
+.no-margin{margin:0px;}
+.flex{display:flex;}
+@media screen and (max-width:600px){
+    .flex{display:block;}
+    .card .card-content {padding:10px;}
+    .paginate{position: relative;}
+    #billing-modal{width:100%;}
+}
+.open-orders{margin-top:25px;}
