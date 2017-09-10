@@ -13,29 +13,27 @@
     <body>
       <!--Import jQuery before materialize.js-->
       <!-- Dropdown Structure -->
-          <nav>
+           <nav>
             <div class="nav-wrapper">
-      <a href="#!" class="brand-logo center"><img style="max-width:20%" class="responsive-img" src="assets/images/app_logo.png"/></a>
-      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-                <ul class="left hide-on-med-and-down">
+                  <a href="#!" class="brand-logo center"><img style="max-width:20%" class="responsive-img" src="assets/images/app_logo.png"/></a>
+                  <a href="#" data-activates="slide-out" class="button-collapse open-modules"><i class="material-icons">menu</i></a>
+                  <a href="#" data-activates="mobile-demo" class="button-collapse right"><i class="material-icons">menu</i></a>
+                <ul class="right hide-on-med-and-down">
                   <li class="active"><a href="index.html">Home</a></li>
                   <li><a href="billing.html">Billing</a></li>
                   <li><a href="table-orders.html">Table Orders</a></li>
                   <li><a href="open-orders.html">Open Orders</a></li>
                 </ul>
-              <ul class="right hide-on-med-and-down">
-                <li><a href=""><i class="material-icons">search</i></a></li>
-                <li><a href=""><i class="material-icons">view_module</i></a></li>
-                <li><a href=""><i class="material-icons">build</i></a></li>
-                <li><a href=""><i class="material-icons">person</i></a></li>
-              </ul>
+                <ul class="left hide-on-med-and-down">
+                  <li><a id="click-modules" href="#"><i class="material-icons">menu</i></a></li>
+                </ul>
 
               <!-- for mobile version -->
               <ul class="side-nav" id="mobile-demo">
-                <li class="active"><a href="index.html">Home</a></li>
-                <li><a href="billing.html">Billing</a></li>
-                <li><a href="table-orders.html">Table Orders</a></li>
-                <li><a href="open-orders.html">Open Orders</a></li>
+                 <li class="active"><a href="index.html">Home</a></li>
+                  <li><a href="billing.html">Billing</a></li>
+                  <li><a href="table-orders.html">Table Orders</a></li>
+                  <li><a href="open-orders.html">Open Orders</a></li>
               </ul>
             </div>
           </nav>
@@ -44,37 +42,11 @@
     <!-- Tablet and desktop -->
               <div class="container-fluid">
                   <div class="row no-margin flex">
-                      <div class="col s12 l3 sidebar">
-                      <div class="col s12">
-                          <div class="card">
-                                  <div class="card-content">
-                                    <span class="card-title activator grey-text text-darken-4">AD-HOC<a href="#modal-adhoc" class="modal-trigger"><i class="material-icons right">more_vert</i></a></span>
-                                  </div>
-                            </div>
-                      </div>
-                      <div class="col s12">
-                          <div class="card">
-                                  
-                                  <div class="card-content">
-                                    <span class="card-title activator grey-text text-darken-4">TABLE ORDER<a href="table-orders.html"><i class="material-icons right">more_vert</i></a></span>
-                                  </div>
-                            </div>
-                      </div>
-                      <div class="col s12">
-                          <div class="card">
-                                  
-                                  <div class="card-content">
-                                    <span class="card-title activator grey-text text-darken-4">OPEN ORDERS<a href="open-orders.html"><i class="material-icons right">more_vert</i></a></span>
-                                  </div>
-                            </div>
-                      </div>
-                      </div>
-
-                      <div class="col s12 l9">
+                      <div class="col s12 l12">
                       <!-- For Tables  -->
                       <div class="table-orders">
                             <div class="row">
-                                <div class="col s6 l3">
+                                <div class="col s6 l2">
                                       <div class="table-design free">
                                          <a href="#modal-tableorder" class="modal-trigger">
                                          <div class="table-design-inner">
@@ -84,7 +56,7 @@
                                          </a>
                                       </div>
                                 </div>
-                                <div class="col s6 l3">
+                                <div class="col s6 l2">
                                       <div class="table-design allocated">
                                          <a href="#modal-tableorder" class="modal-trigger">
                                          <div class="table-design-inner">
@@ -94,7 +66,7 @@
                                          </a>
                                       </div>
                                 </div>
-                                <div class="col s6 l3">
+                                <div class="col s6 l2">
                                       <div class="table-design free">
                                         <a href="#modal-tableorder" class="modal-trigger">
                                         <div class="table-design-inner">
@@ -104,7 +76,27 @@
                                          </a>
                                       </div>
                                 </div>
-                                <div class="col s6 l3">
+                                <div class="col s6 l2">
+                                      <div class="table-design free">
+                                         <a href="#modal-tableorder" class="modal-trigger">
+                                         <div class="table-design-inner">
+                                        <img src="assets/images/table.png">
+                                        <p>For 4 People</p>
+                                         </div>
+                                         </a>
+                                      </div>
+                                </div>
+                                <div class="col s6 l2">
+                                      <div class="table-design free">
+                                         <a href="#modal-tableorder" class="modal-trigger">
+                                         <div class="table-design-inner">
+                                        <img src="assets/images/table.png">
+                                        <p>For 4 People</p>
+                                         </div>
+                                         </a>
+                                      </div>
+                                </div>
+                                <div class="col s6 l2">
                                       <div class="table-design free">
                                          <a href="#modal-tableorder" class="modal-trigger">
                                          <div class="table-design-inner">
@@ -115,45 +107,65 @@
                                       </div>
                                 </div>
                             </div>
-                            <div class="row">
-                                <div class="col s6 l3">
+                                                        <div class="row">
+                                <div class="col s6 l2">
                                       <div class="table-design free">
-                                        <a href="#modal-tableorder" class="modal-trigger">
-                                        <div class="table-design-inner">
-                                        <img src="assets/images/table.png">
-                                        <p>For 6 People</p>
-                                        </div>
-                                        </a>
-                                      </div>
-                                </div>
-                                <div class="col s6 l3">
-                                      <div class="table-design allocated">
-                                        <a href="#modal-tableorder" class="modal-trigger">
-                                        <div class="table-design-inner">
-                                        <img src="assets/images/table-reserved.png">
-                                        <p>For 8 People</p>
-                                        </div>
+                                         <a href="#modal-tableorder" class="modal-trigger">
+                                         <div class="table-design-inner">
+                                         <img src="assets/images/table.png">
+                                         <p>For 6 People</p>
+                                         </div>
                                          </a>
                                       </div>
                                 </div>
-                                <div class="col s6 l3">
+                                <div class="col s6 l2">
+                                      <div class="table-design allocated">
+                                         <a href="#modal-tableorder" class="modal-trigger">
+                                         <div class="table-design-inner">
+                                        <img src="assets/images/table-reserved.png">
+                                        <p>For 8 People</p>
+                                         </div>
+                                         </a>
+                                      </div>
+                                </div>
+                                <div class="col s6 l2">
                                       <div class="table-design free">
                                         <a href="#modal-tableorder" class="modal-trigger">
                                         <div class="table-design-inner">
                                         <img src="assets/images/table.png">
                                         <p>For 2 People</p>
-                                        </div>
-                                        </a>
+                                         </div>
+                                         </a>
                                       </div>
                                 </div>
-                                <div class="col s6 l3">
+                                <div class="col s6 l2">
                                       <div class="table-design free">
-                                        <a href="#modal-tableorder" class="modal-trigger">
-                                        <div class="table-design-inner">
+                                         <a href="#modal-tableorder" class="modal-trigger">
+                                         <div class="table-design-inner">
                                         <img src="assets/images/table.png">
                                         <p>For 4 People</p>
-                                        </div>
-                                        </a>
+                                         </div>
+                                         </a>
+                                      </div>
+                                </div>
+                                <div class="col s6 l2">
+                                      <div class="table-design free">
+                                         <a href="#modal-tableorder" class="modal-trigger">
+                                         <div class="table-design-inner">
+                                        <img src="assets/images/table.png">
+                                        <p>For 4 People</p>
+                                         </div>
+                                         </a>
+                                      </div>
+                                </div>
+                                <div class="col s6 l2">
+                                      <div class="table-design free">
+                                         <a href="#modal-tableorder" class="modal-trigger">
+                                         <div class="table-design-inner">
+                                        <img src="assets/images/table.png">
+                                        <p>For 4 People</p>
+                                         </div>
+                                         </a>
                                       </div>
                                 </div>
                             </div>
@@ -190,6 +202,29 @@
                 </div>
               </footer>
 
+              <ul id="slide-out" class="side-nav">
+                  <li>
+                      <div class="card">
+                                  <div class="card-content">
+                                    <span class="card-title activator grey-text text-darken-4">AD-HOC<a href="#modal-adhoc" class="modal-trigger"><i class="material-icons right">more_vert</i></a></span>
+                                  </div>
+                      </div>
+                  </li>
+                  <li>
+                    <div class="card">
+                                  <div class="card-content">
+                                    <span class="card-title activator grey-text text-darken-4">TABLE ORDER<a href="table-orders.html"><i class="material-icons right">more_vert</i></a></span>
+                                  </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="card">
+                                  <div class="card-content">
+                                    <span class="card-title activator grey-text text-darken-4">OPEN ORDERS<a href="open-orders.html"><i class="material-icons right">more_vert</i></a></span>
+                                  </div>
+                    </div>
+                  </li>
+               </ul>
 
               <!--  MODALSSS -->
               <!-- Adhoc modal -->

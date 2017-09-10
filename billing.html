@@ -15,27 +15,25 @@
       <!-- Dropdown Structure -->
           <nav>
             <div class="nav-wrapper">
-      <a href="#!" class="brand-logo center"><img style="max-width:20%" class="responsive-img" src="assets/images/app_logo.png"/></a>
-      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-                <ul class="left hide-on-med-and-down">
+                  <a href="#!" class="brand-logo center"><img style="max-width:20%" class="responsive-img" src="assets/images/app_logo.png"/></a>
+                  <a href="#" data-activates="slide-out" class="button-collapse open-modules"><i class="material-icons">menu</i></a>
+                  <a href="#" data-activates="mobile-demo" class="button-collapse right"><i class="material-icons">menu</i></a>
+                <ul class="right hide-on-med-and-down">
                   <li class="active"><a href="index.html">Home</a></li>
                   <li><a href="billing.html">Billing</a></li>
                   <li><a href="table-orders.html">Table Orders</a></li>
                   <li><a href="open-orders.html">Open Orders</a></li>
                 </ul>
-              <ul class="right hide-on-med-and-down">
-                <li><a href=""><i class="material-icons">search</i></a></li>
-                <li><a href=""><i class="material-icons">view_module</i></a></li>
-                <li><a href=""><i class="material-icons">build</i></a></li>
-                <li><a href=""><i class="material-icons">person</i></a></li>
-              </ul>
+                <ul class="left hide-on-med-and-down">
+                  <li><a id="click-modules" href="#"><i class="material-icons">menu</i></a></li>
+                </ul>
 
               <!-- for mobile version -->
               <ul class="side-nav" id="mobile-demo">
-                <li class="active"><a href="index.html">Home</a></li>
-                <li><a href="billing.html">Billing</a></li>
-                <li><a href="table-orders.html">Table Orders</a></li>
-                <li><a href="open-orders.html">Open Orders</a></li>
+                 <li class="active"><a href="index.html">Home</a></li>
+                  <li><a href="billing.html">Billing</a></li>
+                  <li><a href="table-orders.html">Table Orders</a></li>
+                  <li><a href="open-orders.html">Open Orders</a></li>
               </ul>
             </div>
           </nav>
@@ -491,6 +489,30 @@
                   </div>
                 </div>
               </footer>
+
+              <ul id="slide-out" class="side-nav">
+                  <li>
+                      <div class="card">
+                                  <div class="card-content">
+                                    <span class="card-title activator grey-text text-darken-4">AD-HOC<a href="#modal-adhoc" class="modal-trigger"><i class="material-icons right">more_vert</i></a></span>
+                                  </div>
+                      </div>
+                  </li>
+                  <li>
+                    <div class="card">
+                                  <div class="card-content">
+                                    <span class="card-title activator grey-text text-darken-4">TABLE ORDER<a href="table-orders.html"><i class="material-icons right">more_vert</i></a></span>
+                                  </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="card">
+                                  <div class="card-content">
+                                    <span class="card-title activator grey-text text-darken-4">OPEN ORDERS<a href="open-orders.html"><i class="material-icons right">more_vert</i></a></span>
+                                  </div>
+                    </div>
+                  </li>
+               </ul>
       <script type="text/javascript" src="assets/js/jquery.js"></script>
       <script type="text/javascript" src="assets/js/materialize.min.js"></script>
       <script type="text/javascript" src="assets/js/script.js"></script>

@@ -60,7 +60,8 @@ table.tot td{text-align:right;}
 @media screen and (max-width: 600px) {
     .scroll-x{overflow-x: scroll;}
 }
-.sidebar{background-color:#02b26a;padding:25px 5px!important;}
+.side-nav {top:60px;background-color:#02b26a;}
+#sidenav-overlay {background-color: transparent;}
 .no-margin{margin:0px;}
 .flex{display:flex;}
 @media screen and (max-width:600px){
