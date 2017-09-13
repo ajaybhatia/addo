@@ -1,219 +1,118 @@
 <!DOCTYPE html>
-<!--
-This is a starter template page. Use this page to start your new project from
-scratch. This page gets rid of all links and provides the needed markup only.
--->
-<html>
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Addo</title>
-  <!-- Tell the browser to be responsive to screen width -->
-  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-  <!-- Bootstrap 3.3.6 -->
-  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
-  <!-- Ionicons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
-  <!-- Theme style -->
-  <link rel="stylesheet" href="dist/css/AdminLTE.min.css">
-  <!-- Material Design -->
-  <link rel="stylesheet" href="dist/css/bootstrap-material-design.min.css">
-  <link rel="stylesheet" href="dist/css/ripples.min.css">
-  <link rel="stylesheet" href="dist/css/MaterialAdminLTE.min.css">
-  
-  <link rel="stylesheet" href="dist/css/skins/skin-md-blue.min.css">
-  <link rel="stylesheet" href="dist/css/custom.css">
-  
-</head>
+  <html>
+    <head>
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="assets/css/materialize.min.css"  media="screen,projection"/>
+      <link type="text/css" rel="stylesheet" href="assets/css/style.css"  media="screen,projection"/>
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
 
-<body class="hold-transition skin-addo sidebar-mini">
-<div class="wrapper">
+    <body>
+      <!--Import jQuery before materialize.js-->
+      <!-- Dropdown Structure -->
+          <nav>
+            <div class="nav-wrapper">
+      <a href="#!" class="brand-logo center"><img style="max-width:20%" class="responsive-img" src="assets/images/app_logo.png"/></a>
+      <a href="#" data-activates="slide-out" class="button-collapse open-modules"><i class="material-icons">menu</i></a>
+      <a href="#" data-activates="mobile-demo" class="button-collapse right"><i class="material-icons">menu</i></a>
+                <ul class="right hide-on-med-and-down">
+                  <li class="active"><a href="index.html">Home</a></li>
+                  <li><a href="billing.html">Billing</a></li>
+                  <li><a href="table-orders.html">Table Orders</a></li>
+                  <li><a href="open-orders.html">Open Orders</a></li>
+                </ul>
+                <ul class="left hide-on-med-and-down">
+                  <li><a id="click-modules" href="#"><i class="material-icons">menu</i></a></li>
+                </ul>
 
-  <!-- Main Header -->
-  <header class="main-header">
-
-    <!-- Logo -->
-    <a href="" class="logo">
-      <!-- mini logo for sidebar mini 50x50 pixels -->
-      <span class="logo-mini"><img id="app-logo" class="img-responsive center-block" src="assets/images/app_logo.png"></span>
-      <!-- logo for regular state and mobile devices -->
-      <span class="logo-lg"><img id="app-logo" class="img-responsive center-block" src="assets/images/uengage_pow.png"></span>
-    </a>
-
-    <!-- Header Navbar -->
-    <nav class="navbar navbar-static-top" role="navigation">
-      <!-- Sidebar toggle button-->
-      <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
-        <span class="sr-only">Toggle navigation</span>
-      </a>
-      <!-- Navbar Right Menu -->
-      <div class="navbar-custom-menu">
-        <ul class="nav navbar-nav">
-          <!-- Messages: style can be found in dropdown.less-->
-          <li><a href="">Home</a> </li>
-          <!-- User Account Menu -->
-          <li class="dropdown user user-menu">
-            <!-- Menu Toggle Button -->
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-              <!-- The user image in the navbar-->
-              <!-- hidden-xs hides the username on small devices so only the image appears. -->
-              <i class="fa fa-gears"></i>
-            </a>
-            <ul class="dropdown-menu">
-              <!-- Menu Footer-->
-              <li class="user-footer">
-                <div class="pull-left">
-                  <a href="#" class="btn btn-default btn-flat">Profile</a>
-                </div>
-                <div class="pull-right">
-                  <a href="#" class="btn btn-default btn-flat">Sign out</a>
-                </div>
-              </li>
-            </ul>
-          </li>
-          <!-- Control Sidebar Toggle Button -->
-        </ul>
-      </div>
-    </nav>
-  </header>
-  <!-- Left side column. contains the logo and sidebar -->
-  <aside class="main-sidebar">
-
-    <!-- sidebar: style can be found in sidebar.less -->
-    <section class="sidebar">
-      <!-- search form (Optional) -->
-      <form action="#" method="get" class="sidebar-form">
-        <div class="input-group">
-          <input type="text" name="q" class="form-control" placeholder="Search...">
-              <span class="input-group-btn">
-                <button type="submit" name="search" id="search-btn" class="btn btn-flat"><i class="fa fa-search"></i>
-                </button>
-              </span>
-        </div>
-      </form>
-      <!-- /.search form -->
-
-      <!-- Sidebar Menu -->
-      <ul class="sidebar-menu">
-        <li><a href="index.html"><i class="fa fa-home"></i> <span>Home</span></a></li>
-        <!-- Optionally, you can add icons to the links -->
-        <li class="treeview">
-          <a class="active" href="#"><i class="fa fa-table"></i> <span>Table Allocation</span>
-            <span class="pull-right-container">
-              <i class="fa fa-angle-left pull-right"></i>
-            </span>
-          </a>
-          <ul class="treeview-menu">
-            <li class="active"><a href="allocate-table.html">Allocate Table</a></li>
-            <li><a href="#" data-toggle="modal" data-target="#adHocModal">Ad-hoc Order</a></li>
-            <li><a href="open-orders.html">Open Order</a></li>
-          </ul>
-        </li>
-        <li><a href="take-order.html"><i class="fa fa-file-text-o"></i> <span>Take Order</span></a></li>
-        <li class="active"><a href="#"><i class="fa fa-ticket"></i> <span>Table Management</span></a></li>
-        <li class="active"><a href="#"><i class="fa fa-bars"></i> <span>Menu Management</span></a></li>
-        <li class="active"><a href="#"><i class="fa fa-book"></i> <span>Inventory</span></a></li>
-      </ul>
-      <!-- /.sidebar-menu -->
-    </section>
-    <!-- /.sidebar -->
-  </aside>
-
-  <!-- Content Wrapper. Contains page content -->
-  <div class="content-wrapper">
-    <!-- Content Header (Page header) -->
-    <section class="content-header">
-      <h1>
-        Page Header
-        <small>Optional description</small>
-      </h1>
-    </section>
-
-    <!-- Main content -->
-    <section class="content">
-        <div class="container-fluid landing-page">
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="inner-module text-center">
-                    <h4>Allocate Table</h4>
-                    <a href="allocate-table.html" class="btn-open-orders">Lets Start</a>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="inner-module text-center">
-                    <h4>Ad-Hoc Orders</h4>
-                    <a href="#" data-toggle="modal" data-target="#adHocModal" class="btn-open-orders">Lets Start</a>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="inner-module text-center">
-                    <h4>Open Orders</h4>
-                    <a href="open-orders.html" class="btn-open-orders">Lets Start</a>
-                    </div>
-                </div>
+              <!-- for mobile version -->
+              <ul class="side-nav" id="mobile-demo">
+                 <li class="active"><a href="index.html">Home</a></li>
+                  <li><a href="billing.html">Billing</a></li>
+                  <li><a href="table-orders.html">Table Orders</a></li>
+                  <li><a href="open-orders.html">Open Orders</a></li>
+              </ul>
             </div>
-        </div>
-    </section>
-    <!-- /.content -->
-  </div>
-  <!-- /.content-wrapper -->
+          </nav>
+               <h1> Hello </h1><h1> Hello </h1><h1> Hello </h1>
+              <!-- Footer  -->
+              <footer class="page-footer">
+                <div class="container">
+                  <div class="row">
+                    <div class="col l6 s12">
+                      <h5 class="white-text">Footer Content</h5>
+                      <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+                    </div>
+                    <div class="col l4 offset-l2 s12">
+                      <h5 class="white-text">Links</h5>
+                      <ul>
+                        <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="footer-copyright">
+                  <div class="container">
+                  © 2014 Copyright Text
+                  <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+                  </div>
+                </div>
+              </footer>
 
-  <!-- Main Footer -->
-  <footer class="main-footer">
-    <!-- To the right -->
-    <div class="pull-right hidden-xs">
-      <!-- Anything you want -->
-    </div>
-    <!-- Default to the left -->
-    <strong>Copyright Addo &copy; 2017 <a href="#">Company</a>.</strong> All rights reserved.
-  </footer>
-  <!-- Add the sidebar's background. This div must be placed
-       immediately after the control sidebar -->
-  <div class="control-sidebar-bg"></div>
-</div>
-<!-- ./wrapper -->
+              <ul id="slide-out" class="side-nav">
+                  <li>
+                      <div class="card">
+                                  <div class="card-content">
+                                    <span class="card-title activator grey-text text-darken-4">AD-HOC<a href="#modal-adhoc" class="modal-trigger"><i class="material-icons right">more_vert</i></a></span>
+                                  </div>
+                      </div>
+                  </li>
+                  <li>
+                    <div class="card">
+                                  <div class="card-content">
+                                    <span class="card-title activator grey-text text-darken-4">TABLE ORDER<a href="table-orders.html"><i class="material-icons right">more_vert</i></a></span>
+                                  </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="card">
+                                  <div class="card-content">
+                                    <span class="card-title activator grey-text text-darken-4">OPEN ORDERS<a href="open-orders.html"><i class="material-icons right">more_vert</i></a></span>
+                                  </div>
+                    </div>
+                  </li>
+               </ul>
 
-<!-- FOR ALL MODALS -->
-  <div class="modal fade" id="adHocModal" role="dialog">
-    <div class="modal-dialog modal-sm">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title text-center">Enter Mobile Number</h4>
-        </div>
-        <div class="modal-body">
-          <form id="ad-hoc" class="text-center">
-              <input type="text" name="phone-number">
-              <input type="submit" name="" placeholder="Enter Mobile Phone Number">
-          </form>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-<!-- REQUIRED JS SCRIPTS -->
-
-<!-- jQuery 2.2.3 -->
-<script src="assets/jQuery/jquery-2.2.3.min.js"></script>
-<!-- Bootstrap 3.3.6 -->
-<script src="bootstrap/js/bootstrap.min.js"></script>
-<!-- Material Design -->
-<script src="dist/js/material.min.js"></script>
-<script src="dist/js/ripples.min.js"></script>
-<script>
-    $.material.init();
-</script>
-<!-- AdminLTE App -->
-<script src="dist/js/app.min.js"></script>
-
-<!-- Optionally, you can add Slimscroll and FastClick plugins.
-     Both of these plugins are recommended to enhance the
-     user experience. Slimscroll is required when using the
-     fixed layout. -->
-</body>
-</html>
+              <!--  MODALSSS -->
+              <!-- Adhoc modal -->
+              <div id="modal-adhoc" class="modal modal-fixed-footer">
+                <div class="modal-content">
+                  <h5 class="center-align modal-title">Enter Mobile Number</h5>
+                  <form class="col s12">
+                  <div class="row">
+                    <div class="input-field col s12">
+                      <i class="material-icons prefix">phone</i>
+                      <input id="icon_telephone" type="tel" class="validate">
+                      <label for="icon_telephone">Telephone</label>
+                    </div>
+                    <div class="input-field col s12 center-align">
+                    <a class="waves-effect waves-light btn-large">Submit</a>
+                    </div>
+                  </div>
+                </form>
+                </div>
+                <div class="modal-footer">
+                  <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Cancel</a>
+                </div>
+              </div>
+      <script type="text/javascript" src="assets/js/jquery.js"></script>
+      <script type="text/javascript" src="assets/js/materialize.min.js"></script>
+      <script type="text/javascript" src="assets/js/script.js"></script>
+    </body>
+  </html>
