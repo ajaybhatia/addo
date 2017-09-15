@@ -1,13 +1,8 @@
 $( document ).ready(function(){
 
-
-
-
-
-$('.table-allocate-inner').on('click',function(){
-
+$('#btn-tm').on('click',function(){
+	$('.toggle-table-management').slideToggle();
 });
-
 // Allocation and Deallocation of Tables
 
 $('.table-allocate-inner').on('click',function(){

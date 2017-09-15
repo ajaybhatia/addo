@@ -8,7 +8,7 @@
 .main-header{background-color:#eeeeee;}
 .allocate-table img{max-height:80px;}
 .allocate-table .row{padding:18px 0px;}
-.allocate-table .table-allocate-inner{cursor:pointer;}
+.allocate-table .table-allocate-inner{cursor: pointer;border: 1px solid rgba(0, 0, 0, 0.08);}
 form#ad-hoc input[type="text"]{
 	width: 100%;
     border: 2px solid rgba(150, 213, 38, 0.41);
@@ -25,6 +25,28 @@ form#ad-hoc input[type="submit"]{
     text-align: center;
     border: none;
 }
+#btn-tm{cursor:pointer;}
+.toggle-table-management{display:none;border-bottom: 2px solid #c1c1c1;}
+.crud-form input, select{
+    width: 100%;
+    padding: 5px 0px;
+    border: 1px solid rgba(150, 213, 38, 0.32);
+}
+.form-r p{margin: 10px 0px 0px 0px;}
+.checkbox-row{padding:5px 0px;}
+.checkbox-row .checkbox .checkbox-material .check, label.checkbox-inline .checkbox-material .check {
+    position: relative;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border: 1px solid rgb(150, 213, 38);
+    border-radius: 2px;
+    overflow: hidden;
+    z-index: 1;
+}
+.checkbox-row .checkbox .checkbox-material, label.checkbox-inline .checkbox-material {
+padding: 5px!important;
+}
 .table-badge{
    position: absolute;
     /* top: 10px; */
@@ -36,7 +58,7 @@ form#ad-hoc input[type="submit"]{
     padding: 5px 10px;
     font-size: 10px;
 }
-a.btn-open-orders{
+.btn-open-orders{
 	background-color: #96d526;
     margin: 10px auto;
     color: #fff;
@@ -59,6 +81,7 @@ a.btn-open-orders{
     }
 @media screen and (max-width:600px){
 	.content-wrapper{margin-top:25px;}
+    .table-allocate-inner{margin:5px 0px;}
 }
 #quantity{max-width:50px;}
 #quantity .form-group{margin:0;}
@@ -86,3 +109,15 @@ table.tot td{text-align: right;}
 table tr.totb{font-weight:bold;border-top:2px solid black;padding:10px 0px;}
 .show-products{height:100%;}
 .show-products .producttitle{text-align:center;}
+.table-no {
+    position: absolute;
+    /* top: 10px; */
+    right: 0;
+    background: #000000;
+    text-align: center;
+    /* border-radius: 30px 30px 30px 30px; */
+    color: white;
+    padding: 5px 10px;
+    font-size: 10px;
+}
+.padding-ul20{padding:20px 0px;}
